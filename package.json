@@ -1,0 +1,40 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "MEVN server template",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon --exec 'npm run lint && node -r dotenv/config -r babel-register src/server.js dotenv_config_path=src/.env'",
+    "lint": "./node_modules/.bin/eslint \"src/**/*.js\"",
+    "test": "jest -c .jestrc.json",
+    "coverage": "jest --collectCoverageFrom=src/**,js --coverage src"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bluebird": "^3.5.2",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "graphql-tools": "^3.1.1",
+    "method-override": "^3.0.0",
+    "moment": "^2.22.2",
+    "moment-timezone": "^0.5.21",
+    "morgan": "^1.9.0",
+    "neo4j-driver": "^1.6.3",
+    "neo4j-graphql-js": "^0.2.0",
+    "winston": "^3.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "jest": "^23.5.0",
+    "nodemon": "^1.18.3"
+  }
+}

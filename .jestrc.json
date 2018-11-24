@@ -1,0 +1,3 @@
+{
+  "testRegex": "src\\/.*unit\\.test\\.js$"
+}
