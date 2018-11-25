@@ -3,7 +3,7 @@
 export default {
   env: process.env.NODE_ENV || 'development',
   app: {
-    port: (8080),
+    port: (process.env.PORT),
   },
   db: {
     host: process.env.DB_HOST,
